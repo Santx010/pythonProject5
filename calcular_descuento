@@ -1,0 +1,22 @@
+def calcular_descuento(monto_total, porcentaje_descuento=10):
+    descuento = (monto_total * porcentaje_descuento) / 100
+    return descuento
+monto = 100
+descuento = calcular_descuento(monto)
+print(f"El descuento es: ${descuento}")
+def calcular_descuento(monto_total, porcentaje_descuento=10):
+    descuento = (monto_total * porcentaje_descuento) / 100
+    return descuento
+
+# Programa principal
+if __name__ == "__main__":
+    # Primera llamada: solo monto total
+    monto1 = 150
+    descuento1 = calcular_descuento(monto1)
+    print(f"El descuento sobre ${monto1} es: ${descuento1}")
+
+    # Segunda llamada: monto total y porcentaje de descuento
+    monto2 = 200
+    porcentaje2 = 15
+    descuento2 = calcular_descuento(monto2, porcentaje2)
+    print(f"El descuento sobre ${monto2} con un {porcentaje2}% es: ${descuento2}")
